@@ -36,7 +36,7 @@ pipeline {
           GIT_HEAD = sh(returnStdout: true, script: 'git rev-parse --short HEAD')
 
           echo "GIT_HEAD is ${GIT_HEAD}"
-          branch = "${BRANCH_NAME}"
+          branch = "${env.BRANCH_NAME}"
           releasedVersion = getReleaseVersion()
           echo "Building version ${env.BUILD_NUMBER} so released version is ${releasedVersion}"
           currentTime = sh(returnStdout: true, script: 'date +%Y-%m-%d').trim()
