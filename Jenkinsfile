@@ -8,7 +8,7 @@ pipeline {
   }
 
   // global env variables
-//  environment {
+  environment {
 //    NODEJS_HOME = tool 'nodejs11.13'
 //    PATH='${PATH}:/usr/local/bin:/usr/bin:/bin:${NODEJS_HOME}/bin'
 
