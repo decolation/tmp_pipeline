@@ -13,9 +13,9 @@ pipeline {
     PATH='${PATH}:/usr/local/bin:/usr/bin:/bin:${NODEJS_HOME}/bin'
 
     // Credentials
-    GIT_CREDS = credentials('gitlab-user')
-    SIT_CREDS = credentials('sit-user')
-    UAT_CREDS = credentials('uat-user')
+//    GIT_CREDS = credentials('gitlab-user')
+//    SIT_CREDS = credentials('sit-user')
+//    UAT_CREDS = credentials('uat-user')
 
     // Variables
     NEXUS_URL = 'http://192.168.1.33:8085/nexus'
